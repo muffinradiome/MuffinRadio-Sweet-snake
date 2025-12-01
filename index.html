@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Muffin Radio — Sweet Snake</title>
+		<meta
+			name="description"
+			content="Muffin Radio — Sweet Snake: простая HTML5 змейка с маффинами. Игра для браузера, легко выкладывается на GitHub Pages."
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<h1>Muffin Radio — Sweet Snake</h1>
+			<p class="lead">
+				Собирай маффины, растущая змейка — осторожно с границами и хвостом!
+				Управление стрелками / WASD.
+			</p>
+
+			<div class="game-wrap">
+				<canvas id="game" width="400" height="400"></canvas>
+				<div class="info">
+					<div>Счёт: <span id="score">0</span></div>
+					<div>Лучший: <span id="best">0</span></div>
+					<div>
+						<button id="startBtn">Старт</button>
+						<button id="shareBtn">Копировать ссылку</button>
+					</div>
+				</div>
+			</div>
+
+			<section class="controls">
+				<h2>Как играть</h2>
+				<ol>
+					<li>Нажмите «Старт» (или клавишу Enter).</li>
+					<li>Управление: стрелки или WASD.</li>
+					<li>Ешьте маффины (🧁) — они увеличивают длину змейки и очки.</li>
+					<li>Не врезайтесь в стену и собственный хвост.</li>
+				</ol>
+			</section>
+
+			<footer>
+				<p>
+					Репозиторий:
+					<span id="repoPlaceholder"
+						>[здесь вставьте ссылку на ваш GitHub]</span
+					>
+				</p>
+			</footer>
+		</main>
+		<script src="script.js"></script>
+	</body>
+</html>
